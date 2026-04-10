@@ -7,7 +7,7 @@
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
- 
+
   :root {
     --teal: #1D9E75;
     --teal-light: #E1F5EE;
@@ -23,9 +23,9 @@
     --accent-amber: #BA7517;
     --accent-amber-light: #FAEEDA;
   }
- 
+
   html { scroll-behavior: smooth; }
- 
+
   body {
     font-family: 'DM Sans', sans-serif;
     background: var(--surface);
@@ -33,7 +33,7 @@
     line-height: 1.7;
     overflow-x: hidden;
   }
- 
+
   /* NAV */
   nav {
     position: fixed; top: 0; left: 0; right: 0;
@@ -64,7 +64,7 @@
     transition: color 0.2s;
   }
   .nav-links a:hover { color: var(--teal); }
- 
+
   /* HERO */
   .hero {
     min-height: 100vh;
@@ -190,12 +190,12 @@
     transition: border-color 0.2s, color 0.2s;
   }
   .btn-outline:hover { border-color: var(--teal); color: var(--teal); }
- 
+
   @keyframes fadeUp {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
   }
- 
+
   /* SECTIONS */
   section { padding: 5rem 2rem; }
   .section-inner { max-width: 900px; margin: 0 auto; }
@@ -214,7 +214,7 @@
     letter-spacing: -0.02em;
     margin-bottom: 2.5rem;
   }
- 
+
   /* ABOUT */
   #about { background: var(--white); }
   .about-grid {
@@ -245,7 +245,7 @@
   .detail-info {}
   .detail-label { font-size: 0.72rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; font-weight: 600; }
   .detail-value { color: var(--ink); font-weight: 500; }
- 
+
   /* SKILLS */
   #skills { background: var(--surface); }
   .skills-grid {
@@ -286,7 +286,7 @@
     border: 1px solid var(--border);
     font-family: 'JetBrains Mono', monospace;
   }
- 
+
   /* EXPERIENCE */
   #experience { background: var(--white); }
   .timeline { position: relative; padding-left: 28px; }
@@ -362,7 +362,7 @@
     padding: 4px 12px;
     border-radius: 100px;
   }
- 
+
   /* PROJECTS */
   #projects { background: var(--surface); }
   .projects-grid {
@@ -424,7 +424,7 @@
     color: var(--teal-dark);
     font-family: 'JetBrains Mono', monospace;
   }
- 
+
   /* EDUCATION & CERTS */
   #education { background: var(--white); }
   .edu-grid {
@@ -451,7 +451,7 @@
     font-weight: 500;
   }
   .edu-meta { font-size: 0.78rem; color: var(--muted); }
- 
+
   .cert-item {
     display: flex; align-items: center; gap: 1rem;
     background: var(--surface);
@@ -483,7 +483,7 @@
     transition: background 0.2s;
   }
   .cert-link:hover { background: var(--teal-light); }
- 
+
   /* CONTACT */
   #contact {
     background: var(--ink);
@@ -530,7 +530,7 @@
     font-size: 16px;
     flex-shrink: 0;
   }
- 
+
   /* FOOTER */
   footer {
     background: var(--ink-2);
@@ -539,18 +539,14 @@
     font-size: 0.8rem;
     color: rgba(255,255,255,0.3);
   }
- 
+
   /* SCROLL REVEAL */
   .reveal {
-    opacity: 0;
-    transform: translateY(24px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
-  }
-  .reveal.visible {
     opacity: 1;
     transform: translateY(0);
+    transition: opacity 0.6s ease, transform 0.6s ease;
   }
- 
+
   @media (max-width: 700px) {
     .about-grid, .contact-grid, .edu-grid { grid-template-columns: 1fr; }
     .projects-grid { grid-template-columns: 1fr; }
@@ -560,7 +556,7 @@
 </style>
 </head>
 <body>
- 
+
 <!-- NAV -->
 <nav>
   <span class="nav-logo">BV</span>
@@ -573,7 +569,7 @@
     <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
- 
+
 <!-- HERO -->
 <section class="hero">
   <div class="hero-inner">
@@ -604,7 +600,7 @@
     </div>
   </div>
 </section>
- 
+
 <!-- ABOUT -->
 <section id="about">
   <div class="section-inner">
@@ -656,7 +652,7 @@
     </div>
   </div>
 </section>
- 
+
 <!-- SKILLS -->
 <section id="skills">
   <div class="section-inner">
@@ -741,14 +737,14 @@
     </div>
   </div>
 </section>
- 
+
 <!-- EXPERIENCE -->
 <section id="experience">
   <div class="section-inner">
     <p class="section-label">Experience</p>
     <h2 class="section-title">Career Journey</h2>
     <div class="timeline">
- 
+
       <div class="timeline-item reveal">
         <div class="timeline-dot featured"></div>
         <div class="timeline-header">
@@ -768,7 +764,7 @@
         </ul>
         <div class="achievement-badge">⭐ Promoted to Data Researcher II</div>
       </div>
- 
+
       <div class="timeline-item reveal">
         <div class="timeline-dot"></div>
         <div class="timeline-header">
@@ -784,7 +780,7 @@
           <li>Managed over 2,000 customer calls, establishing excellent client relationships through professional communication and timely responses to user inquiries.</li>
         </ul>
       </div>
- 
+
       <div class="timeline-item reveal">
         <div class="timeline-dot"></div>
         <div class="timeline-header">
@@ -800,7 +796,7 @@
           <li>Established a professional technical documentation system for company-wide usage.</li>
         </ul>
       </div>
- 
+
       <div class="timeline-item reveal">
         <div class="timeline-dot"></div>
         <div class="timeline-header">
@@ -817,18 +813,18 @@
           <li>Maximized asset management to boost company revenue by INR 1.5 crore/annum.</li>
         </ul>
       </div>
- 
+
     </div>
   </div>
 </section>
- 
+
 <!-- PROJECTS -->
 <section id="projects">
   <div class="section-inner">
     <p class="section-label">Projects, Traineeship & Internship</p>
     <h2 class="section-title">Featured Work</h2>
     <div class="projects-grid">
- 
+
       <div class="project-card reveal">
         <div class="project-date">March 2026</div>
         <h3>Chemical Content-Based Cosmetics Recommendation System</h3>
@@ -843,7 +839,7 @@
           <span class="stack-tag">Scikit-Learn</span>
         </div>
       </div>
- 
+
       <div class="project-card reveal">
         <div class="project-date">March 2026</div>
         <h3>Bellabeat Smart Device Usage Analysis</h3>
@@ -857,12 +853,23 @@
           <span class="stack-tag">NumPy</span>
         </div>
       </div>
- 
+
+      <div class="project-card reveal">
+        <div class="project-date">Jun – Aug 2018</div>
+        <h3>Jr. Finance Executive</h3>
+        <div class="project-context">Internship · Reliance Jio, Bangalore</div>
+        <p>Executed comprehensive organisational data analysis through interviews and surveys, gathering data from 1,000+ Reliance Jio users for customer satisfaction analysis. Identified network connectivity issues faced by 25% of rural service users and generated data-driven insights for corrective actions. Managed over 2,000 customer calls while supporting user needs with professional communication.</p>
+        <div class="project-stack">
+          <span class="stack-tag">Data Analysis</span>
+          <span class="stack-tag">Survey Research</span>
+          <span class="stack-tag">Customer Analytics</span>
+          <span class="stack-tag">Technical Writing</span>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
- 
-<!-- EDUCATION -->
 <section id="education">
   <div class="section-inner">
     <p class="section-label">Education & Credentials</p>
@@ -884,7 +891,7 @@
         <div class="edu-meta">Rajkot, Gujarat, India · 2012–2015</div>
       </div>
     </div>
- 
+
     <div class="cert-item reveal" style="margin-top: 2rem;">
       <div class="cert-icon">🏅</div>
       <div>
@@ -895,7 +902,7 @@
     </div>
   </div>
 </section>
- 
+
 <!-- CONTACT -->
 <section id="contact">
   <div class="section-inner">
@@ -938,9 +945,9 @@
     </div>
   </div>
 </section>
- 
+
 <footer>
   © 2026 Benson Varghese · Data Scientist · Dubai, UAE
 </footer>
- 
+
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-sta
