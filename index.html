@@ -7,7 +7,7 @@
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
+ 
   :root {
     --teal: #1D9E75;
     --teal-light: #E1F5EE;
@@ -23,9 +23,9 @@
     --accent-amber: #BA7517;
     --accent-amber-light: #FAEEDA;
   }
-
+ 
   html { scroll-behavior: smooth; }
-
+ 
   body {
     font-family: 'DM Sans', sans-serif;
     background: var(--surface);
@@ -33,7 +33,7 @@
     line-height: 1.7;
     overflow-x: hidden;
   }
-
+ 
   /* NAV */
   nav {
     position: fixed; top: 0; left: 0; right: 0;
@@ -64,7 +64,7 @@
     transition: color 0.2s;
   }
   .nav-links a:hover { color: var(--teal); }
-
+ 
   /* HERO */
   .hero {
     min-height: 100vh;
@@ -190,12 +190,12 @@
     transition: border-color 0.2s, color 0.2s;
   }
   .btn-outline:hover { border-color: var(--teal); color: var(--teal); }
-
+ 
   @keyframes fadeUp {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
   }
-
+ 
   /* SECTIONS */
   section { padding: 5rem 2rem; }
   .section-inner { max-width: 900px; margin: 0 auto; }
@@ -214,7 +214,7 @@
     letter-spacing: -0.02em;
     margin-bottom: 2.5rem;
   }
-
+ 
   /* ABOUT */
   #about { background: var(--white); }
   .about-grid {
@@ -245,7 +245,7 @@
   .detail-info {}
   .detail-label { font-size: 0.72rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; font-weight: 600; }
   .detail-value { color: var(--ink); font-weight: 500; }
-
+ 
   /* SKILLS */
   #skills { background: var(--surface); }
   .skills-grid {
@@ -286,7 +286,7 @@
     border: 1px solid var(--border);
     font-family: 'JetBrains Mono', monospace;
   }
-
+ 
   /* EXPERIENCE */
   #experience { background: var(--white); }
   .timeline { position: relative; padding-left: 28px; }
@@ -362,7 +362,7 @@
     padding: 4px 12px;
     border-radius: 100px;
   }
-
+ 
   /* PROJECTS */
   #projects { background: var(--surface); }
   .projects-grid {
@@ -424,7 +424,7 @@
     color: var(--teal-dark);
     font-family: 'JetBrains Mono', monospace;
   }
-
+ 
   /* EDUCATION & CERTS */
   #education { background: var(--white); }
   .edu-grid {
@@ -451,7 +451,7 @@
     font-weight: 500;
   }
   .edu-meta { font-size: 0.78rem; color: var(--muted); }
-
+ 
   .cert-item {
     display: flex; align-items: center; gap: 1rem;
     background: var(--surface);
@@ -483,7 +483,7 @@
     transition: background 0.2s;
   }
   .cert-link:hover { background: var(--teal-light); }
-
+ 
   /* CONTACT */
   #contact {
     background: var(--ink);
@@ -530,7 +530,7 @@
     font-size: 16px;
     flex-shrink: 0;
   }
-
+ 
   /* FOOTER */
   footer {
     background: var(--ink-2);
@@ -539,14 +539,14 @@
     font-size: 0.8rem;
     color: rgba(255,255,255,0.3);
   }
-
+ 
   /* SCROLL REVEAL */
   .reveal {
     opacity: 1;
     transform: translateY(0);
     transition: opacity 0.6s ease, transform 0.6s ease;
   }
-
+ 
   @media (max-width: 700px) {
     .about-grid, .contact-grid, .edu-grid { grid-template-columns: 1fr; }
     .projects-grid { grid-template-columns: 1fr; }
@@ -556,7 +556,7 @@
 </style>
 </head>
 <body>
-
+ 
 <!-- NAV -->
 <nav>
   <span class="nav-logo">BV</span>
@@ -569,7 +569,7 @@
     <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
-
+ 
 <!-- HERO -->
 <section class="hero">
   <div class="hero-inner">
@@ -578,7 +578,7 @@
     <p class="hero-subtitle">Data Scientist turning raw data into decisions — with Python, SQL & Power BI.</p>
     <div class="hero-stats">
       <div class="stat-item">
-        <span class="stat-num">2+</span>
+        <span class="stat-num">4+</span>
         <span class="stat-label">Years Experience</span>
       </div>
       <div class="stat-item">
@@ -600,59 +600,20 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- ABOUT -->
 <section id="about">
   <div class="section-inner">
     <p class="section-label">About</p>
     <h2 class="section-title">Data Professional & Problem Solver</h2>
-    <div class="about-grid reveal">
-      <div class="about-text">
-        <p>I'm a Data Professional with an MSc in Data Science from Aberystwyth University, UK, and over 2 years of hands-on experience using SQL, Python, and Power BI to solve real business problems.</p>
-        <p>At S&P Global Market Intelligence, I improved team output by 40% through workflow simulations and reduced data ingestion errors by 26% through systematic database auditing and root-cause analysis.</p>
-        <p>I thrive at the intersection of data engineering and storytelling — translating complex datasets into clear, actionable insights for both technical and business stakeholders.</p>
-      </div>
-      <div class="about-details">
-        <div class="detail-row">
-          <div class="detail-icon">📍</div>
-          <div class="detail-info">
-            <div class="detail-label">Location</div>
-            <div class="detail-value">Al Khail Gate, Al Quoz, Dubai, UAE</div>
-          </div>
-        </div>
-        <div class="detail-row">
-          <div class="detail-icon">🎓</div>
-          <div class="detail-info">
-            <div class="detail-label">Education</div>
-            <div class="detail-value">MSc Data Science · Aberystwyth University, UK</div>
-          </div>
-        </div>
-        <div class="detail-row">
-          <div class="detail-icon">📞</div>
-          <div class="detail-info">
-            <div class="detail-label">Phone</div>
-            <div class="detail-value">+971 545 197 742</div>
-          </div>
-        </div>
-        <div class="detail-row">
-          <div class="detail-icon">🌍</div>
-          <div class="detail-info">
-            <div class="detail-label">Languages</div>
-            <div class="detail-value">English · Hindi · Gujarati · Malayalam</div>
-          </div>
-        </div>
-        <div class="detail-row">
-          <div class="detail-icon">✉️</div>
-          <div class="detail-info">
-            <div class="detail-label">Email</div>
-            <div class="detail-value"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="f7959299849899d9819685909f928492c6c1b7909a969e9bd994989a">[email&#160;protected]</a></div>
-          </div>
-        </div>
-      </div>
+    <div class="reveal" style="max-width: 680px;">
+      <p style="color:var(--ink-2);margin-bottom:1rem;font-size:1rem;line-height:1.8;">I'm a Data Professional with an MSc in Data Science from Aberystwyth University, UK, and over 4 years of hands-on experience using SQL, Python, and Power BI to solve real business problems.</p>
+      <p style="color:var(--ink-2);margin-bottom:1rem;font-size:1rem;line-height:1.8;">At S&P Global Market Intelligence, I improved team output by 40% through workflow simulations and reduced data ingestion errors by 26% through systematic database auditing and root-cause analysis.</p>
+      <p style="color:var(--ink-2);font-size:1rem;line-height:1.8;">I thrive at the intersection of data engineering and storytelling — translating complex datasets into clear, actionable insights for both technical and business stakeholders.</p>
     </div>
   </div>
 </section>
-
+ 
 <!-- SKILLS -->
 <section id="skills">
   <div class="section-inner">
@@ -737,14 +698,14 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- EXPERIENCE -->
 <section id="experience">
   <div class="section-inner">
     <p class="section-label">Experience</p>
     <h2 class="section-title">Career Journey</h2>
     <div class="timeline">
-
+ 
       <div class="timeline-item reveal">
         <div class="timeline-dot featured"></div>
         <div class="timeline-header">
@@ -764,7 +725,7 @@
         </ul>
         <div class="achievement-badge">⭐ Promoted to Data Researcher II</div>
       </div>
-
+ 
       <div class="timeline-item reveal">
         <div class="timeline-dot"></div>
         <div class="timeline-header">
@@ -780,7 +741,7 @@
           <li>Managed over 2,000 customer calls, establishing excellent client relationships through professional communication and timely responses to user inquiries.</li>
         </ul>
       </div>
-
+ 
       <div class="timeline-item reveal">
         <div class="timeline-dot"></div>
         <div class="timeline-header">
@@ -796,7 +757,7 @@
           <li>Established a professional technical documentation system for company-wide usage.</li>
         </ul>
       </div>
-
+ 
       <div class="timeline-item reveal">
         <div class="timeline-dot"></div>
         <div class="timeline-header">
@@ -813,18 +774,18 @@
           <li>Maximized asset management to boost company revenue by INR 1.5 crore/annum.</li>
         </ul>
       </div>
-
+ 
     </div>
   </div>
 </section>
-
+ 
 <!-- PROJECTS -->
 <section id="projects">
   <div class="section-inner">
     <p class="section-label">Projects, Traineeship & Internship</p>
     <h2 class="section-title">Featured Work</h2>
     <div class="projects-grid">
-
+ 
       <div class="project-card reveal">
         <div class="project-date">March 2026</div>
         <h3>Chemical Content-Based Cosmetics Recommendation System</h3>
@@ -839,7 +800,7 @@
           <span class="stack-tag">Scikit-Learn</span>
         </div>
       </div>
-
+ 
       <div class="project-card reveal">
         <div class="project-date">March 2026</div>
         <h3>Bellabeat Smart Device Usage Analysis</h3>
@@ -853,7 +814,7 @@
           <span class="stack-tag">NumPy</span>
         </div>
       </div>
-
+ 
       <div class="project-card reveal">
         <div class="project-date">Jun – Aug 2018</div>
         <h3>Jr. Finance Executive</h3>
@@ -866,7 +827,7 @@
           <span class="stack-tag">Technical Writing</span>
         </div>
       </div>
-
+ 
     </div>
   </div>
 </section>
@@ -891,7 +852,7 @@
         <div class="edu-meta">Rajkot, Gujarat, India · 2012–2015</div>
       </div>
     </div>
-
+ 
     <div class="cert-item reveal" style="margin-top: 2rem;">
       <div class="cert-icon">🏅</div>
       <div>
@@ -902,7 +863,7 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- CONTACT -->
 <section id="contact">
   <div class="section-inner">
@@ -913,11 +874,11 @@
         <p class="contact-desc">I'm actively seeking data science and analytics roles in Dubai and the UAE. If you're looking for a detail-oriented data professional who can bridge the gap between raw data and business strategy, I'd love to connect.</p>
       </div>
       <div class="contact-items">
-        <a class="contact-item" href="/cdn-cgi/l/email-protection#c6a4a3a8b5a9a8e8b0a7b4a1aea3b5a3f7f086a1aba7afaae8a5a9ab">
+        <a class="contact-item" href="/cdn-cgi/l/email-protection#2a484f44594544045c4b584d424f594f1b1c6a4d474b434604494547">
           <div class="contact-item-icon">✉️</div>
           <div>
             <div style="font-size:0.72rem;color:rgba(255,255,255,0.45);text-transform:uppercase;letter-spacing:0.06em;font-weight:600;">Email</div>
-            <div><span class="__cf_email__" data-cfemail="6301060d100c0d4d150211040b061006525523040e020a0f4d000c0e">[email&#160;protected]</span></div>
+            <div><span class="__cf_email__" data-cfemail="6200070c110d0c4c140310050a071107535422050f030b0e4c010d0f">[email&#160;protected]</span></div>
           </div>
         </a>
         <a class="contact-item" href="tel:+971545197742">
@@ -945,9 +906,5 @@
     </div>
   </div>
 </section>
-
-<footer>
-  © 2026 Benson Varghese · Data Scientist · Dubai, UAE
-</footer>
-
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-sta
+ 
+<
